@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RocketU Movies</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../exercises/moviepicker/assets/css/moviestyles.css">
+		<script type="text/javascript" src="../exercises/moviepicker/assets/js/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="../exercises/moviepicker/assets/js/movies.js"></script>
+		<script type="text/javascript">
+			var userName = 'Your Name';
+			$(document).ready(
+				function() {
+					loadMovies();
+					// traditional way of getting div#wrapper
+					var wrapper = document.getElementById('wrapper');
+					wrapper.className = 'active';
+
+					// SELECTOR
+					// $(h1); // error, h1 is a variable
+					$('h1'); // getting all h1 tags
+					$('<h1/>'); // creating an h1 tag
+
+
+					// JQuery way of getting the parent
+					var parent = $('h1').parent(); // get the parent of h1
+					parent.addClass('active'); // add class attr 'active' to div#wrapper
+					
+					/* dynamic adding header to page */
+					parent.prepend('<h1 id="header1a" class="active" name="kevin">Hello, ' + userName+'</h1>'); // easiest way
+					parent.prepend( 
+						$('<h1/>')
+							.html('Hello 2, ' + userName)
+							.attr('id','header1b')
+							.attr('name','kevin')
+							.addClass('active')
+					); // logical way
+					
+					var headerClass = 'headerActive';
+					var headerName = 'something';
+					
+					parent.prepend('<h2 id="header2a" class="'+headerClass+'" name="'+headerName+'">Hello again, ' + userName+'</h1>'); // easiest way
+					parent.prepend( 
+						$('<h2/>')
+							.html('Hello again 2, ' + userName)
+							.attr('id','header2b')
+							.attr('name',headerName)
+							.addClass(headerClass)
+					); // logical way
+					
+					/* changing color of all fonts */
+					/* parent
+						.css('color','black')
+						.css('background-color','white');
+					*/
+						
+					/* Adding Click Event Listener to h1 */
+					$('h1').on('click',
+						function() {
+							console.log(this); // 1. debug only
+							console.log(this.innerHTML); // 2. correct, but not preferred
+							console.log($(this)); // 3. debug only
+							console.log($(this).html()); // 4. correct and preferred
+							// WRONG EXAMPLES
+							// console.log($('h1').html()); // getting first from full document
+							// console.log(this.html()); // HTML Object doesn't have functions
+							// console.log($(this).innerHTML); // JQuery Object doesn't have properties
+						}
+					);
+					
+					/* loop through checkboxes */
+					$('input[type=checkbox]').each(
+						function() {
+							var name = $(this).attr('name');
+							console.log(name);
+						}
+					);
+					
+					/* 
+						Goal: print all movie titles under action & adventure 
+						Logic: loop through li within ul where an id is 'action-movies'
+					*/
+					$('ul#action-movies li').each(function() {
+						console.log($(this).html());
+					});
+					/* Option 2 */
+					$('ul#comedy-movies').children('li').each(function() {
+						console.log($(this).html());
+					});
+					/* Option 3 */
+					$('ul#scifi-movies').find('li').each(function() {
+						console.log($(this).text());
+					});
+					/*
+						<ul id="scifi-movies">
+							<li>
+								Title
+								<ul>
+									<li>Year</li>
+								</ul>
+							</li>
+						</ul>
+					*/
+					
+					
+					/* 
+						for each ul.movies
+						get its children li
+						and display the content
+					*/
+				}
+			);
+		</script>
+	</head>
+	
+	<body >
+	
+		<div id="wrapper">
+		
+			<a href="/"><img id="logo" src="../exercises/moviepicker/assets/images/rocket-u-logo-large.png" alt="RocketU logo" title="Go to RocketU home page"></a>
+			
+			<h1>Movie Picker</h1>
+			<hr>
+			
+			<p>Hi, thanks for stopping by. We have a great range of movies that you can order,
+				 just choose the genres that you're interested in and then double-click any movie to add it to your pick-list.</p>
+			
+			<div id="genre-list">
+				<input type="checkbox" name="action" value="">Action &amp; Adventure
+				<input type="checkbox" name="comedy" value="">Comedy
+				<input type="checkbox" name="scifi" value="">Sci-Fi &amp; Fantasy
+			</div>
+
+			<p>If you would like to highlight new movies just click the 'Highlight new movies' button below...</p>
+			<p><button id="btn-newmovies" onclick="toggleNewItems(this);">Highlight new movies</button></p>
+		
+			<div id="movies">
+				
+				<h2 class="action">Action &amp; Adventure</h2>
+				<ul id="action-movies" class="movies action">
+				</ul>
+				
+				<h2 class="comedy">Comedy</h2>
+				<ul id="comedy-movies" class="movies comedy">
+				</ul>
+				
+				<h2 class="scifi">Sci-Fi &amp; Fantasy</h2>
+				<ul id="scifi-movies" class="movies scifi">
+				</ul>
+				
+			</div>
+			
+			<div id="picklist">
+			
+				<h2>My Pick-list</h2>
+				<ul class="picklist">
+				</ul>
+				<p id="startnote">Double-click a movie to start your list...</p>
+				
+			</div>
+		
+			<hr>
+			
+			<div id="footer">
+				<p>Copyright &copy; 2013 RocketSpace Inc.</p>
+			</div>
+
+		</div>
+	</body>
+</html>
