@@ -1,0 +1,155 @@
+/* application.css
+   CSS stylesheet for RocketU Course enquiry page 
+   CSS Exercises */
+
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+
+html {
+	background-color: #061639;
+}
+
+body {
+	width: 860px;
+	padding: 20px;
+	margin:  10px auto;
+	background-color: #fff;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+/* ==========================================================================
+   Headings & paras
+   ========================================================================== */
+
+
+h1, h2, h3 {
+	color:  #5a0002;
+}
+
+#intro {
+	color:  #5a0002;
+}
+
+.question {
+	font-style: italic;
+}
+
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+ul {
+	list-style-type: circle;
+}
+
+ol {
+	list-style-type: decimal-leading-zero;
+}
+
+dl {
+	padding-left: 40px;
+	margin-bottom:  40px;
+}
+
+div.list {
+	width: 50%;
+	float:  left;
+}
+
+.list + h2 {
+	clear: both;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a {
+	text-decoration: none;
+	color:  #5a0002;
+}
+
+a:active, a:hover {
+	
+	text-decoration: underline;	
+}
+
+
+/* ==========================================================================
+   Table
+   ========================================================================== */
+
+table {
+	border-collapse: collapse;
+	border: 1px solid #5a0002;
+}
+
+th, td {
+	border: 1px solid #5a0002;
+	padding:  5px;
+}
+
+th {
+	background-color: #5a0002;
+	color:  #fff;
+}
+
+th:first-child + th,
+th:first-child + th + th +th,
+td:first-child + td,
+td:first-child + td + td + td,
+th:last-child,
+td:last-child {
+	text-align:  center;
+}
+
+caption {
+	font-size:  1.5em;
+	font-weight: bold;
+	color:  #5a0002;
+	text-align: left;	
+}
+
+
+/* ==========================================================================
+   Form
+   ========================================================================== */
+
+label[for] {
+	display: inline-block;
+	width: 8em;
+	margin-bottom:  3px;
+}
+
+label[for="male"] {
+	margin-left:  8em;
+}
+
+input[type="text"] {
+	margin-bottom:  3px;
+	border: 1px solid #333;	
+}
+
+input[type="checkbox"] {
+	display: inline-block;
+	margin-right:  5px;
+	margin-left: 5px;
+}
+
+p + label  input[type="checkbox"] {
+	margin-left: 0;
+}
+
+textarea {
+	width:  30%;
+}
+
+
+
+

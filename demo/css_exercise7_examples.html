@@ -1,0 +1,118 @@
+<html>
+<head>
+	<style>
+		pre { width: 100%; padding: 10px; border: 1px dashed grey; background: #ccc; }
+		
+		#example1 .checkboxes input[type="checkbox"] { margin-left: 40px; }
+		#example1 .checkboxes input[type="checkbox"]:first-child { margin-left: 0; }
+
+		#example2 .checkboxes label { margin-right: 40px; }
+
+		#example3 .checkboxes label { margin-left: 40px; }
+		#example3 .checkboxes label:first-child { margin-left: 0; }
+
+		#example4 .checkboxes input[type="checkbox"] { margin-right: 40px; }
+		
+		#example5 { clear: both; padding-bottom: 20px; }
+		#example5 ul.checkboxes { list-style: none; padding: 0; }
+		#example5 ul.checkboxes li { float: left; margin-right: 40px; }
+		
+		#example6 { clear: both; }
+		#example6 ul.checkboxes { list-style: none; padding: 0; }
+		#example6 ul.checkboxes li { display: inline-block; margin-right: 40px; }
+	</style>
+</head>
+<body>
+<div id="default">
+	<h3>Default</h3>
+	<p>Which courses are you interested in?</p>
+	<div class="checkboxes">
+		<input type="checkbox" name="course_wcf" id="wcf" value="wcf"/>
+		<label for="wcf">Web &amp; Coding Fundamentals</label>
+		<input type="checkbox" name="course_wdb" id="wdb" value="wdb"/>
+		<label for="wdb">Web Developer Bootcamp</label>
+	</div>
+</div>
+<div id="example1">
+	<h3>Example 1</h3>
+	<pre>#example1 .checkboxes input[type="checkbox"] { margin-left: 40px; }
+#example1 .checkboxes input[type="checkbox"]:first-child { margin-left: 0; }</pre>
+	<p>Which courses are you interested in?</p>
+	<div class="checkboxes">
+		<input type="checkbox" name="course_wcf" id="wcf" value="wcf"/>
+		<label for="wcf">Web &amp; Coding Fundamentals</label>
+		<input type="checkbox" name="course_wdb" id="wdb" value="wdb"/>
+		<label for="wdb">Web Developer Bootcamp</label>
+	</div>
+</div>
+<div id="example2">
+	<h3>Example 2</h3>
+	<pre>#example2 .checkboxes label { margin-right: 40px; }</pre>
+	<p>Which courses are you interested in?</p>
+	<div class="checkboxes">
+		<input type="checkbox" name="course_wcf" id="wcf" value="wcf"/>
+		<label for="wcf">Web &amp; Coding Fundamentals</label>
+		<input type="checkbox" name="course_wdb" id="wdb" value="wdb"/>
+		<label for="wdb">Web Developer Bootcamp</label>
+	</div>
+</div>
+<div id="example3">
+	<h3>Example 3</h3>
+	<pre>#example3 .checkboxes label { margin-left: 40px; }
+	#example3 .checkboxes label:first-child { margin-left: 0; }</pre>
+	<p>Which courses are you interested in?</p>
+	<div class="checkboxes">
+		<label for="wcf">Web &amp; Coding Fundamentals</label>
+		<input type="checkbox" name="course_wcf" id="wcf" value="wcf"/>
+		<label for="wdb">Web Developer Bootcamp</label>
+		<input type="checkbox" name="course_wdb" id="wdb" value="wdb"/>
+	</div>
+</div>
+<div id="example4">
+	<h3>Example 4</h3>
+	<pre>#example4 .checkboxes input[type="checkbox"] { margin-right: 40px; }</pre>
+	<p>Which courses are you interested in?</p>
+	<div class="checkboxes">
+		<label for="wcf">Web &amp; Coding Fundamentals</label>
+		<input type="checkbox" name="course_wcf" id="wcf" value="wcf"/>
+		<label for="wdb">Web Developer Bootcamp</label>
+		<input type="checkbox" name="course_wdb" id="wdb" value="wdb"/>
+	</div>
+</div>
+<div id="example5">
+	<h3>Example 5</h3>
+	<pre>#example5 ul.checkboxes { list-style: none; padding: 0; }
+#example5 ul.checkboxes li { float: left; margin-right: 40px; }</pre>
+	<p>Which courses are you interested in?</p>
+	<ul class="checkboxes">
+		<li>
+			<input type="checkbox" name="course_wcf" id="wcf" value="wcf"/>
+			<label for="wcf">Web &amp; Coding Fundamentals</label>
+		</li>
+		<li>
+			<input type="checkbox" name="course_wdb" id="wdb" value="wdb"/>
+			<label for="wdb">Web Developer Bootcamp</label>
+		</li>
+	</ul>
+</div>
+<div id="example6">
+	<h3>Example 6</h3>
+	<pre>#example6 ul.checkboxes { list-style: none; padding: 0; }
+#example6 ul.checkboxes li { display: inline-block; margin-right: 40px; }</pre>
+	<p>Which courses are you interested in?</p>
+	<ul class="checkboxes">
+		<li>
+			<input type="checkbox" name="course_wcf" id="wcf" value="wcf"/>
+			<label for="wcf">Web &amp; Coding Fundamentals</label>
+		</li>
+		<li>
+			<input type="checkbox" name="course_wdb" id="wdb" value="wdb"/>
+			<label for="wdb">Web Developer Bootcamp</label>
+		</li>
+	</ul>
+</div>
+
+
+
+</body>
+</html>

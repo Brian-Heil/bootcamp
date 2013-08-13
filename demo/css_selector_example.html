@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<title>CSS Selector Exercise</title>
+	<meta charset="utf8"/>
+	<style>
+		/* all links should be orange */
+		a { color: orange; }
+		
+		/* any links within div#hero */
+		div#hero a { color: blue; }
+		
+		/* links directly belongs to div#hero */
+		div#hero > a { display: block; width: 100px; height: 30px; line-height: 30px; border: 1px solid black; background-color: blue; color: white; text-decoration: none; text-align: center; border-radius: 5px; }
+		
+		/* any links within div#selling-point */
+		div#selling-point a { color: red; }
+	</style>
+</head>
+<body>
+	<header>
+		<img src="http://rocket-space.com/wp-content/uploads/2012/11/rocketspace-name-logo-large-300x116.png"/>
+		<a href="">Hero Link</a>
+	</header>
+	<div id="hero">
+		<h1>Develop Yourself</h1>
+		<p>RocketU helps top-performing entrepreneurs and tech professionals learn the cutting-edge coding languages and techniques that are <a href="">necessary</a> for today’s modern applications. We’re more than just another dev bootcamp; we deliver our courses with your whole tech career in mind. RocketU is embedded on the RocketSpace campus, giving you access to some of the hottest tech startups on the planet.
+			<a href="">Link to Somewhere</a>
+		</p>
+		<ul>
+			<li>Entrepreneurs with a <a href="">product idea</a></li>
+			<li>Developers that want to fast-track their career</li>
+			<li>Weekend warriors that want to become codemasters</li>
+		</ul>
+		<a href="">Learn More</a>
+	</div>
+	<div id="selling-point">
+		<h2>RocketU is Perfect for</h2>
+		<ul>
+			<li>Entrepreneurs with a product idea</li>
+			<li>Developers that want to fast-track their career</li>
+			<li>Weekend warriors that want to become codemasters</li>
+		</ul>
+		<a href="">Apply Now</a>
+	</div>
+</body>
+</html>

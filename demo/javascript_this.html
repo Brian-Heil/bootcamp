@@ -1,0 +1,53 @@
+<html>
+<head>
+	<script type="text/javascript">
+		
+		// Using the magic "this" from onclick
+		function doSomethingWithThis(element) {
+			console.log(element);
+			console.log('Clicking on checkbox ' + element.name);
+		}
+		
+		// get element by id
+		function getHTMLElementWithId(id) {
+			var idElement = document.getElementById(id);
+			console.log(idElement);
+			console.log(idElement.innerHTML);
+		}
+
+		// get elements by className
+		function getHTMLElementsWithClass(className) {
+			var classElements = document.getElementsByClassName(className);
+			for(i=0; i<classElements.length; i++) {
+				console.log(classElements[i]);
+				console.log(classElements[i].innerHTML);
+			}
+		}
+	</script>
+	<style type="text/css">
+		div { margin: 20px; padding: 10px; border: 1px solid grey; }
+		
+	</style>
+</head>
+<body>
+	<input type="checkbox" name="test1" value="y" onclick="doSomethingWithThis(this)"/> Test 1 <br/>
+	<input type="checkbox" name="test2" value="y" onclick="doSomethingWithThis(this)"/> Test 2 <br/>
+	<input type="checkbox" name="test3" value="y" onclick="doSomethingWithThis(this)"/> Test 3 <br/>
+	<input type="checkbox" name="test4" value="y" onclick="doSomethingWithThis(this)"/> Test 4 <br/>
+	<input type="checkbox" name="test5" value="y" onclick="doSomethingWithThis(this)"/> Test 5 <br/>
+	
+	<div id="test">
+		Id Test
+	</div>
+	
+	<div class="test">
+		Class Test 1
+	</div>
+	<div class="test">
+		Class Test 2
+	</div>
+	
+	<button onclick="getHTMLElementWithId('test')">Get HTML Element with Id</button>
+	<button onclick="getHTMLElementsWithClass('test')">Get HTML Elements with Class</button>
+</body>
+</html>
