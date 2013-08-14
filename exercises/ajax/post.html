@@ -6,13 +6,15 @@
 	<script type="text/javascript" src="js/exercises.js"></script>	
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$.ajax({
-				url: 'http://localhost:8000/api',
-				type: 'POST',
-				dataType: 'json',
-				data: {
-					firstname: 'kevin'
-				}
+			$('#testpost').on('click',function() {
+				$.ajax({
+					url: 'http://localhost:8000/api',
+					type: 'POST',
+					dataType: 'json',
+					data: {
+						firstname: 'kevin'
+					}
+				});
 			});
 		});
 	</script>

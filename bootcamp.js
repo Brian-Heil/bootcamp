@@ -40,12 +40,30 @@ module.exports = function() {
   });
   
   // ROUTES
-  app.post('/api',function(req,res) {
-  	data = req.body;
-  	for (var k in data) {
-	  	data[k] = data[k] + ' Posted';
+  app.get('/api',function(req,res) {
+  	if (req.params.length === 0) {
+		return res.send(500,'No data received');	  	
+  	} else {
+		json = {
+			'status': 'Success',
+			'message': 'Get data received, not secure but received',
+			'data': req.params	
+		};
+		return res.json(json);
   	}
-	return res.json(data);
+  });
+  
+  app.post('/api',function(req,res) {
+  	if (req.body.length === 0) {
+		return res.send(500,'No data received');	  	
+  	} else {
+		json = {
+			'status': 'Success',
+			'message': 'Post data received',
+			'data': req.body	
+		};
+		return res.json(json);
+  	}
   });
 	  
   return app;
