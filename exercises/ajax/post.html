@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<title>RocketU - JSON / XML / AJAX - Exercises</title>
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/exercises.js"></script>	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$.ajax({
+				url: 'http://localhost:8000/api',
+				type: 'POST',
+				dataType: 'json',
+				data: {
+					firstname: 'kevin'
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>JSON / XML / AJAX Exercises</h1>
+	
+	<button id="testpost">Test Post</button>
+</body>
+</html>

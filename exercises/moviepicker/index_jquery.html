@@ -7,15 +7,119 @@
 		<script type="text/javascript" src="assets/js/jquery-2.0.3.min.js"></script>
 		<script type="text/javascript" src="assets/js/movies.js"></script>
 		<script type="text/javascript" src="assets/js/application.js"></script>
+		<script type="text/javascript">
+			var userName = 'Kevin Lee';
+			$(document).ready(
+				function() {
+					loadMovies();
+					// traditional way of getting div#wrapper
+					var wrapper = document.getElementById('wrapper');
+					wrapper.className = 'active';
+
+					// SELECTOR
+					// $(h1); // error, h1 is a variable
+					$('h1'); // getting all h1 tags
+					$('<h1/>'); // creating an h1 tag
+
+
+					// JQuery way of getting the parent
+					var parent = $('h1').parent(); // get the parent of h1
+					parent.addClass('active'); // add class attr 'active' to div#wrapper
+					
+					/* dynamic adding header to page */
+					parent.prepend('<h1 id="header1a" class="active" name="kevin">Hello, ' + userName+'</h1>'); // easiest way
+					parent.prepend( 
+						$('<h1/>')
+							.html('Hello 2, ' + userName)
+							.attr('id','header1b')
+							.attr('name','kevin')
+							.addClass('active')
+					); // logical way
+					
+					var headerClass = 'headerActive';
+					var headerName = 'something';
+					
+					parent.prepend('<h2 id="header2a" class="'+headerClass+'" name="'+headerName+'">Hello again, ' + userName+'</h1>'); // easiest way
+					parent.prepend( 
+						$('<h2/>')
+							.html('Hello again 2, ' + userName)
+							.attr('id','header2b')
+							.attr('name',headerName)
+							.addClass(headerClass)
+					); // logical way
+					
+					/* changing color of all fonts */
+					/* parent
+						.css('color','black')
+						.css('background-color','white');
+					*/
+						
+					/* Adding Click Event Listener to h1 */
+					$('h1').on('click',
+						function() {
+							console.log(this); // 1. debug only
+							console.log(this.innerHTML); // 2. correct, but not preferred
+							console.log($(this)); // 3. debug only
+							console.log($(this).html()); // 4. correct and preferred
+							// WRONG EXAMPLES
+							// console.log($('h1').html()); // getting first from full document
+							// console.log(this.html()); // HTML Object doesn't have functions
+							// console.log($(this).innerHTML); // JQuery Object doesn't have properties
+						}
+					);
+					
+					/* loop through checkboxes */
+					$('input[type=checkbox]').each(
+						function() {
+							var name = $(this).attr('name');
+							console.log(name);
+						}
+					);
+					
+					/* 
+						Goal: print all movie titles under action & adventure 
+						Logic: loop through li within ul where an id is 'action-movies'
+					*/
+					$('ul#action-movies li').each(function() {
+						console.log($(this).html());
+					});
+					/* Option 2 */
+					$('ul#comedy-movies').children('li').each(function() {
+						console.log($(this).html());
+					});
+					/* Option 3*/
+					$('ul#scifi-movies').find('li').each(function() {
+						console.log($(this).text());
+					});
+					/*
+						<ul id="scifi-movies">
+							<li>
+								Title
+								<ul>
+									<li>Year</li>
+								</ul>
+							</li>
+						</ul>
+					*/
+					
+					
+					/* 
+						for each ul.movies
+						get its children li
+						and display the content
+					*/
+				}
+			);
+		</script>
 	</head>
 	
-	<body onload="loadMovies()">
+	<body >
 	
 		<div id="wrapper">
 		
 			<a href="/"><img id="logo" src="assets/images/rocket-u-logo-large.png" alt="RocketU logo" title="Go to RocketU home page"></a>
 			
-			<h1><span>Movie Picker</span></h1>
+			<h1>Movie Picker</h1>
 			<hr>
 			
 			<p>Hi, thanks for stopping by. We have a great range of movies that you can order,

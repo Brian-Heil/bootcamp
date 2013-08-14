@@ -1,0 +1,35 @@
+{
+  "name": "RocketUBootcamp",
+  "version": "1.0.0",
+  "description": "RocketUBootcamp",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": {
+    "name": "Kevin lee",
+    "email": "klee@rocket-space.com",
+    "url":  "http://www.rocketu.com/"
+  },
+  "homepage": "http://www.rocketu.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://gitub.com/openshift/origin-server"
+  },
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+
+  "dependencies": {
+  	"express": "*"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+
+  "private": true,
+  "main": "server.js"
+}
