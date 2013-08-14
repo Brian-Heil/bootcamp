@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<title>JSON Examples</title>
+<script type="text/javascript">
+	var students = [ 
+		'Daniel', 
+		'James', 
+		'Andrew', 
+		'Joe', 
+		'Brian', 
+		'Chris', 
+		'Max', 
+		'Paul', 
+		'Mike' 
+	];	
+	console.log(students[2]); // Andrew
+	console.log(students[10]); // undefined
+	console.log(students.length); // 9
+	
+	var studentsAttendance = [
+		{ name: 'Daniel', isHere: true },
+		{ name: 'Paul', isHere: false }
+	];
+	console.log(studentsAttendance.isHere); // undefined
+	console.log(studentsAttendance[0].isHere); // true
+	console.log(studentsAttendance[1].name); // Paul
+	console.log(studentsAttendance[1]['name']); // Paul
+	
+	console.log(studentsAttendance[2]); // undefined
+	//console.log(studentsAttendance[2].name); // error: undefined
+	
+	console.log('*** Finding students not here');
+	/*
+		Goal: print out names for students not here
+		Logic: loop through studentsAttendance array and look for isHere equals false
+	*/
+	for(var i=0; i<studentsAttendance.length; i++) {
+		if (studentsAttendance[i].isHere == false) {
+			var name = studentsAttendance[i].name;
+			console.log(name);
+		}
+	}
+	
+	var studentsSkills = [
+		{ name: 'Daniel', skills: ['html','css','js'] },
+		{ name: 'Joe', skills: ['jquery'] }
+	];
+	console.log(studentsSkills[0].skills[2]);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

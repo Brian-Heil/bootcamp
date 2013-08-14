@@ -1,0 +1,8 @@
+{
+	"firstname": "Joe",
+	"lastname": "Davis",
+	"age": 89,
+	"email": "joe.davis@rocket-space.com",
+	"cell": "800-123-4567",
+	"bands": ["Beatles","Train","One Direction"]
+}
