@@ -22,7 +22,7 @@
 	td:first-child, td:last-child { 
 		font-weight: bold; text-align: center; text-decoration: underline;
 	}
-	table thead tr td { background: black; color: white; }
+	table thead tr td, .row-header td { background: black; color: white; }
 	
 </style>
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
@@ -141,8 +141,11 @@
 			}
 			t.append(r);
 		}
-		$('tr').each(function() {
+		$('tr').each(function(i,el) {
 			$(this).append( $(this).find('td').first().clone() );
+			if (i!=0 && i%4==0) {
+				$(this).before( $('thead tr').clone() );
+			}
 		});
 	});
 </script>
@@ -150,7 +153,7 @@
 <body>
 	<table>
 		<thead>
-			<tr>
+			<tr class="row-header">
 				<td></td>
 				<td>HTML</td>
 				<td>CSS</td>
