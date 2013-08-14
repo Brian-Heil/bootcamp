@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<title>RocketU Bootcamp Cheat Sheet</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<style>
+	body { overflow: scroll; width: 200%; }
+	pre { margin: 0; padding: 0; border: none; background: none; }
+	table {
+		margin: 10px; 
+		border: 1px solid black;
+	}
+	tr { border-top: 1px double grey; }
+	tr:nth-child(even) { background: #efefef; }
+	td { 
+		vertical-align: top; 
+		padding: 5px 20px; 
+		border-left: 1px solid grey;
+		white-space: nowrap;
+	}
+	
+	td:first-child, td:last-child { 
+		font-weight: bold; text-align: center; text-decoration: underline;
+	}
+	table thead tr td { background: black; color: white; }
+	
+</style>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+
+	var data = {
+		'Common Mistakes': {
+			'html': [
+				'indent, Indent, INDENT!',
+				'lower-case for ids and classes',
+				'relative vs. absolute path',
+				'close the empty tags <img/><br/>'
+			],
+			'css': [
+				'# (id)',
+				'. (class)',
+				'ul li (nesting)',
+				'ul > li (children)',
+				'ul + div (adjacent)',
+				'input[type=checkbox] (attribute)'
+			],
+			'js': [
+				'indent, Indent, INDENT!',
+				'camelCase variable and function',
+				'"" means strings',
+				'No quotes are variables',
+				'() means functions',
+				'loop with for'
+			],
+			'jquery': [
+				'indent, Indent, INDENT!',
+				'Always load jQuery script first',
+				'$ is for jQuery, use it',
+				'Is document ready?',
+				'(function() { }) Did you open/close everything?',
+				'Click on the HTML element where you added the listener',
+				'$(this)'
+			],
+			'json': [
+				'Double quotes',
+				'{} is an object',
+				'[] is an array'
+			],				
+		},
+		'Attributes': {
+			'html': '<el key="value"/>',
+			'css': 'key: value;',
+			'js': "var key = value;",
+			'jquery': "$('').attr('key','value');",
+			'json': '{ "key":"value" }'				
+		},
+		'id': {
+			'html': '<div id="test">\n    Content\n</div>',
+			'css': '#test {\n    color: blue;\n}',
+			'js': "var el = document.getElementById('test');\nel.innerHTML = 'Content';",
+			'jquery': "$('#test').html('Content');",
+			'json': 'None'
+		},
+		'class': {
+			'html': '<div class="test">\n    Content\n</div>',
+			'css': '.test {\n    color: blue;\n}',
+			'js': "var el = document.getElementsByClassName('test')[0];\nel.innerHTML = 'Content';",
+			'jquery': "$('.test').html('Content');",
+			'json': 'None'			
+		},
+		'Event': {
+			'html': '<button id="test" onclick="test()">\n    Test Button\n</button>',
+			'css': 'None',
+			'js': "function test() {\n    // DO SOMETHING\n}\nvar el = document.getElementById('test');\nel.onclick = test;",
+			'jquery': "$('#test').on('click',function() {\n    // DO SOMETHING\n});",
+			'json': 'None'			
+		},
+		'Array': {
+			'html': 'None',
+			'css': 'None',
+			'js': "var array = new Array('a','b','c');\nvar array = ['a','b','c'];\nfor(var i=0; i<array.length; i++) {\n    // DO SOMETHING\n}",
+			'jquery': "$('div').each(function() {\n     // DO SOMETHING\n});",
+			'json': '["a","b","c"]'				
+		},
+		'Object': {
+			'html': 'None',
+			'css': 'None',
+			'js': "var object = {\n   firstname: 'Kevin',\n   lastname: 'Lee'\n};\nfor(var key in object) {\n    // DO SOMETHING\n}",
+			'jquery': 'None',
+			'json': '{\n    "firstname":"Kevin",\n    "lastname": "Lee"\n}'				
+		},
+		'Quotes \' \"': {
+			'html': 'Attributes\ne.g. id="page"',
+			'css': "Values with spaces\ne.g. font-family: 'Times New Roman';",
+			'js': "Strings\ne.g. var text = 'Kevin';",
+			'jquery': "Strings, Selectors, Keys/Values\ne.g. $('div.page').attr('name','login');",
+			'json': 'Key/Value\ne.g.{ "name":"test" }'				
+		},		
+		'Comments': {
+			'html': '<!-- COMMENT -->',
+			'css': '/* COMMENT */',
+			'js': '/* COMMENT */\n// COMMENT',
+			'jquery': '/* COMMENT */\n// COMMENT',
+			'json': 'None'
+		},
+	};
+	$(document).ready(function() {
+		var t = $('table tbody');
+		for(var row in data) {
+			r = $('<tr/>').append($('<td/>').html(row));
+			for(var k in data[row]) {
+				if (typeof data[row][k] == 'object') {
+					ul = $('<ul/>');
+					for(var i in data[row][k]) {
+						ul.append( $('<li/>').html(data[row][k][i]) );
+					}
+					r.append( $('<td/>').html(ul) );
+				} else {
+					r.append( $('<td/>').append($('<pre/>').text(data[row][k])));
+				}
+			}
+			t.append(r);
+		}
+		$('tr').each(function() {
+			$(this).append( $(this).find('td').first().clone() );
+		});
+	});
+</script>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<td></td>
+				<td>HTML</td>
+				<td>CSS</td>
+				<td>JavaScript</td>
+				<td>JQuery</td>
+				<td>JSON</td>
+			</tr>
+			</tr>
+		</thead>
+		<tbody>
+
+		</tbody>
+	</table>
+</body>
+</html>
