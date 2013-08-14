@@ -44,7 +44,7 @@ module.exports = function() {
 	json = {
 		'status': 'Success',
 		'message': 'Get data received, not secure but received',
-		'data': req.params	
+		'data': req
 	};
 	return res.json(json);
   });
