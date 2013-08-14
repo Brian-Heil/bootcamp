@@ -41,16 +41,12 @@ module.exports = function() {
   
   // ROUTES
   app.get('/api',function(req,res) {
-  	if (req.params.length === 0) {
-		return res.send(500,'No data received');	  	
-  	} else {
-		json = {
-			'status': 'Success',
-			'message': 'Get data received, not secure but received',
-			'data': req.params	
-		};
-		return res.json(json);
-  	}
+	json = {
+		'status': 'Success',
+		'message': 'Get data received, not secure but received',
+		'data': req.params	
+	};
+	return res.json(json);
   });
   
   app.post('/api',function(req,res) {

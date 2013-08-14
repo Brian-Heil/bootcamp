@@ -6,13 +6,13 @@
 	<script type="text/javascript" src="js/exercises.js"></script>	
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#testpost').on('click',function() {
+			$('#testGet').on('click',function() {
 				$.ajax({
-					url: 'http://localhost:8000/api',
-					type: 'POST',
+					url: 'http://bootcamp-rocketu.rhcloud.com/api',
+					type: 'GET',
 					dataType: 'json',
-					data: {
-						firstname: 'kevin'
+					success: function(data) {
+						console.log(data);
 					}
 				});
 			});
@@ -21,7 +21,8 @@
 </head>
 <body>
 	<h1>JSON / XML / AJAX Exercises</h1>
+	<button id="testGet">Test Get</button>
 	
-	<button id="testpost">Test Post</button>
+	<button id="testPost">Test Post</button>
 </body>
 </html>
