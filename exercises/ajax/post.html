@@ -6,23 +6,25 @@
 	<script type="text/javascript" src="js/exercises.js"></script>	
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#testGet').on('click',function() {
-				$.ajax({
-					url: 'http://bootcamp-rocketu.rhcloud.com/api',
-					type: 'GET',
-					dataType: 'json',
-					success: function(data) {
-						console.log(data);
-					}
-				});
-			});
+			
+		
 		});
 	</script>
 </head>
 <body>
 	<h1>JSON / XML / AJAX Exercises</h1>
-	<button id="testGet">Test Get</button>
 	
+	<h2>Buttons</h2>
+	<button id="testGet">Test Get</button>
 	<button id="testPost">Test Post</button>
+	
+	<hr/>
+	
+	<h2>Form</h2>
+	<form> <!-- HTML way to disable submit <form onsubmit="return false;"> -->
+		<label for="firstname">First Name:</label><input type="text" name="firstname" id="firstname"/><br/>
+		<label for="lastname">Last Name:</label><input type="text" name="lastname" id="lastname"/><br/>
+		<button id="submit">Submit Form</button>
+	</form>
 </body>
 </html>

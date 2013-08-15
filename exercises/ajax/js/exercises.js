@@ -1,4 +1,31 @@
 $(document).ready(function() {
+
+	$('form').on('submit',function() {
+		var firstname = $(this).find('input#firstname').val();
+		var lastname = $(this).find('input#lastname').val();
+		console.log(firstname + ' ' + lastname);
+		
+		$.ajax(
+			{
+				url: 'http://bootcamp-rocketu.rhcloud.com/api',
+				type: 'POST',
+				dataType: 'json',
+				data: {
+					fname: firstname,
+					lname: lastname,
+					date: (new Date())
+				},
+				success: function(json) {
+					console.log(json);
+					// DO SOMETHING HERE
+	
+				}
+			}
+		);
+		
+		return false;
+	});
+
 	$('#getjson').on('click',function() {
 		var me = {
 			firstname: 'Joe',
@@ -74,4 +101,30 @@ $(document).ready(function() {
 		});
 	});
 	
+	$('#testGet').on('click',function() {
+		$.ajax({
+			url: 'http://bootcamp-rocketu.rhcloud.com/api?submit=Submit&firstname=Kevin&lastname=Lee',
+			type: 'GET',
+			dataType: 'json',
+			success: function(json) {
+				// MOST IMPORTANT LINE if you are uncertain about what's coming back from the API
+				console.log(json); 
+				
+				// DISPLAY THE DATA in the browser
+				for(var k in json.data) {
+					// OPTION 1
+					$('body').append('<p>' + k + '=' + json.data[k] + '</p>');
+					// OPTION 2
+					$('body').append($('<li/>').html(k + '=' + json.data[k]));
+				}
+			},
+			complete: function(jqXHR,statusCode) {
+				console.log(statusCode);
+			}
+		});
+	});
+	
+	$('#testPost').on('click',function() {
+		
+	});
 });
