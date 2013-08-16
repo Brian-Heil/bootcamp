@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Javascript Callback</title>
+	<script type="text/javascript" src="../exercises/moviepicker/assets/js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript">
+		function errorHandler() {
+			console.log('Error');
+		}
+		
+		// errorHandler is an "object" with the function definition
+		console.log(errorHandler);
+		// run errorHandler as a function
+		console.log(errorHandler());
+		
+		// How to pass function as a parameter explained
+		function runFunction(f) {
+			f();
+		}
+		// Passing errorHandler function as a parameter, will only run when runFunction calls it
+		runFunction(errorHandler);
+		// ERROR!  errorHandler() will run the function first, 
+		// and pass in the return value to runFunction (which is undefined)
+		// runFunction(errorHandler());
+		
+		// jQuery explanation
+		function getUserName(data) {
+			console.log(data);
+			console.log('calling out user prompt now');
+			window.prompt('Please enter your username');
+		}
+		$(document).ready(function() {
+			// When the user clicks on the button, the .on function within jQuery will run the getUserName function
+			$('button#username').on('click',getUserName);
+			
+			// When the json object returns from the url through the .ajax function, 
+			// it will run the getUserName function if it's successful,
+			// and it will run the errorHandler function if it's not
+			$.ajax(
+				{
+					url: 'http://bootcamp-rocketu.rhcloud.com/api?firstname=Kevin&lastname=Lee',
+					dataType: 'json',
+					success: getUserName,
+					error: errorHandler
+				}
+			);
+		});
+	</script>
+</head>
+</html>
