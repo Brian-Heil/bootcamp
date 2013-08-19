@@ -18,7 +18,7 @@ if (navigator.geolocation) {
 				url += 'zoom=13' + '&';
 				url += 'sensor=false' + '&';
 				url += 'size=600x300' + '&';
-				url += 'key=AIzaSyDuiqjtORQSJr1cTdjMWh8Q66xpKfOojQA';
+				url += 'key=AIzaSyAMtq1_NN7BgM5UYXT9AKgzUFyqjEmL8XU';
 			console.log(url);
 			var map = document.getElementById('map');
 			map.innerHTML = '<img src="' + url + '"/>';		
@@ -29,7 +29,7 @@ if (navigator.geolocation) {
 			if (map) {
 				latlng = new google.maps.LatLng(lat,lng);
 				map.setCenter(latlng);
-				addDynamicMarker(latlng,'RocketU');
+				addDynamicMarker(latlng,'RocketU in with');
 			}
 		}, 
 		errorHandler
@@ -75,7 +75,7 @@ function getStaticMapUrl(params) {
 			zoom: 13,
 			sensor: false,
 			size: '600x600',
-			key: 'AIzaSyDuiqjtORQSJr1cTdjMWh8Q66xpKfOojQA',
+			key: 'AIzaSyAMtq1_NN7BgM5UYXT9AKgzUFyqjEmL8XU',
 			markers: []
 		};
 	if (params.latitude && params.longitude) {
