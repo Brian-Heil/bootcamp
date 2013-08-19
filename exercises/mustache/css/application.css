@@ -1,0 +1,6 @@
+#movies > li { margin: 10px; padding: 10px; border: 1px dashed grey; clear: both; overflow: hidden; }
+#movies li > div { float: right; }
+#movies li img { margin: 10px; }
+#movies li a { margin: 10px; }
+#movies li ul.cast li { }
+#movies li ul.cast li ul.characters li { font-weight: normal; font-style: italic; }

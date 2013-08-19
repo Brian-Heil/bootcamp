@@ -9,5 +9,57 @@
 	<link rel="stylesheet" type="text/css" href="css/application.css"/>
 </head>
 <body>
+<script id="movie-template" type="text/template">
+	<li>
+		<img src="{{posters.profile}}"/>
+		<h2>{{title}}</h2>
+		<span>{{ratings.critics_rating}}</span>
+		<blockquote>{{critics_consensus}}</blockquote>
+		<ul>
+		{{#abridged_cast}}
+			<li>
+				{{name}}
+				<ul>
+					{{#characters}}
+						<li>{{.}}</li>
+					{{/characters}}
+				</ul>
+			</li>
+		{{/abridged_cast}}
+		</ul>
+	</li>
+</script>
+<script id="all-movies-template" type="text/template">
+{{#movies}}
+	<li>
+		<div>
+			<img src="{{posters.profile}}"/>
+			<ul class="rating">
+				<li><strong>Audience: </strong>{{ratings.audience_rating}} ({{ratings.audience_score}})</li>
+				<li><strong>Critics: </strong>{{ratings.critics_rating}} ({{ratings.critics_score}})</li>
+			</ul>		
+			<a href="{{links.alternate}}" class="btn btn-primary">Learn More</a>
+		</div>
+		<h2>{{title}}</h2>
+		<p>{{synopsis}}</p>
+		<blockquote>{{critics_consensus}}</blockquote>
+		<ul class="cast list-unstyled list-inline">
+		{{#abridged_cast}}
+			<li class="btn btn-default">
+				{{name}}
+				<ul class="characters list-unstyled list-inline">
+					{{#characters}}
+						<li>({{.}})</li>
+					{{/characters}}
+				</ul>
+			</li>
+		{{/abridged_cast}}
+		</ul>
+	</li>
+{{/movies}}
+</script>
+<ul id="movies" class="list-unstyled">
+
+</ul>
 </body>
 </html>
