@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<title>Mustache Template</title>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/mustache.js"></script>
+	<script type="text/javascript" src="js/faker.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/application.css"/>
+	<script>
+		var randomName = Faker.Name.findName(); // Caitlyn Kerluke
+		var randomEmail = Faker.Internet.email(); // Rusty@arne.info
+		var randomCard = Faker.Helpers.createCard(); // random contact card containing many properties
+		console.log(randomName + ' ' + randomEmail)
+		console.log(randomCard);
+		
+		// Single Person entry
+		var data = {
+			firstname: Faker.Name.firstName(),
+			lastname: Faker.Name.lastName(),
+			description: Faker.Lorem.paragraph()	
+		};
+		$(document).ready(function() {
+			$('body').append( Mustache.render( $('#sample-template').html(), data) );
+		});
+		
+		// IF complaints in localstorage, use it
+		// IF not, generate it
+		if (localStorage.getItem('complaintList')) {
+			var list = JSON.parse(localStorage.getItem('complaintList'));
+		} else { 
+			// List of Complaints
+			var list = [];
+			for(i=0; i<10; i++) {
+				var complaint = {
+					person: Faker.Name.findName(),
+					issue: Faker.Lorem.paragraph(),
+					type: Faker.random.array_element(['Pot Holes','Griffiti','Broken Meter'])
+				};
+				list.push(complaint);
+			}
+		}
+		
+		console.log(list);
+		$(document).ready(function() {
+			$('body').append( Mustache.render( $('#complaint-template').html(), list) );
+		});
+		
+		// LOCAL STORAGE
+		localStorage.setItem('complaintList',JSON.stringify(list));
+		console.log(localStorage.getItem('complaintList'));
+	</script>
+</head>
+<body>
+<script type="text/template" id="sample-template">
+	<h1>Hello, {{firstname}} {{lastname}}</h1>
+	<p>{{description}}</p>
+</script>
+<script type="text/template" id="complaint-template">
+	<ul id="complaints">
+	{{#.}}
+		<li>
+			<strong>{{person}} reported a {{type}} complaint</strong>
+			<p>{{issue}}</p>
+		</li>
+	{{/.}}
+	</ul>
+</script>
+</body>
+</html>
+
+
+
+
+
+
