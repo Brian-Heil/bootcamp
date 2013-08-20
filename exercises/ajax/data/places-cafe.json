@@ -1,0 +1,629 @@
+[
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.739081,
+        "lng": -122.417405
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+    "id": "5cc2cd007692f886ba79c1d1c1eb31b82cda93ec",
+    "name": "Liberty Cafe",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1536,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CoQBdQAAAClRYO9gf_1J2OPEUr6tdUGT-y85uyqx9pX9u6b-wZNO2mUZbgBMPqNWZKSMW8_UyKaSyCWx357mU4Kamtdz00E-lkCZAT4IzNIcDtdMwv31x_CaGF64uRdQ0wkqLiZ7oT3eaOT0v7MVhHfiXiSKVFjK5NLBVhxCRuP9NOcNNEvxEhB1umuq6Ip41dsYn665Z6VMGhTCOOtZrhrhwKpe6DW_G5i2JRxGMg",
+        "width": 2048
+      }
+    ],
+    "price_level": 2,
+    "rating": 4,
+    "reference": "CnRrAAAA5m4vqnVCWGKESbAZ8nAaMu7kNd_d-hxub5KD956kqIkaRDwPRRK7ukHNr2Z0lkVJxNg-teXIzGmw1YebMno-vTbFFOkHaedJMdGOo3VgcxOL3y17fp_Qhekuf1hwszqwPmzYW4xcCVuoBbn8F8-10RIQ3UL0WIfrWl4SvzBAm2zwjRoU0ctc73kwYkjuuha81CGE6C_0YYQ",
+    "types": [
+      "bakery",
+      "store",
+      "cafe",
+      "bar",
+      "restaurant",
+      "establishment",
+      "food"
+    ],
+    "vicinity": "410 Cortland Avenue, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.744546,
+        "lng": -122.424306
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "708ac1b36432f87393972d556faf10e4d3edee1b",
+    "name": "Noeteca",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1536,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CnRoAAAAvhQ0_SUT4f1425jAhFQuO9Vmrg2ZWCMzYJXcWU3UeLsvLjl98xxjn388tjPpuUfs_YRw55R5S-PD_u503yq6vEFEGt3c4EifBaD7X_UGGtycH2aLV2z-Ze96epqvx0NP2IH68v217bZOQOBH25pJKRIQRX9m-3C2DEjI77suDTNMZxoUuJmUAlL7lMvI6hvl6sHi0PThE5w",
+        "width": 2048
+      }
+    ],
+    "price_level": 1,
+    "rating": 4.1,
+    "reference": "CnRlAAAAWi7jyeplqGCNNghA1peZTom93BTpqH9P8QNYmPRgjUeLtdcDB9I8et3zsMxy6xC7oDz-GfoG3KssHeqyQsVDXEBYBzEVISvC9RXKOGlmhN1aVnJdZ5gtKkWGfqgOYaBocLpdxLRCFsnS1-b6RHWOCxIQCdEbypdfWWUr4p0lhVGMABoUr8-z2Fzqc9NEp-wnTePmYy_gbaY",
+    "types": [
+      "cafe",
+      "bar",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "1551 Dolores Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.733809,
+        "lng": -122.433972
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "71a2b4cafe908a413acadc55ff5b4bd68feb5881",
+    "name": "Bello Coffee & Tea",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1024,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CoQBdgAAAOIvtg2z3-LEB7FsdsDU6M9eVFLdy-osJmwnMJIdidi4yI5OWROwjADfxXGcYB6vARTO1F7dYM4XcRBYjqfNZheEMhnACBEC6maIrX_TU2KLoj6Y7KovNRFq-824R9WVhd5SluaPTVMFSwah5pwRlC2iT6vhtmlipr6lXANRV22KEhASGPBtgLixv1xMciXEi8VTGhQiwCeL81paIOkW1pLZD1pUKjsbXw",
+        "width": 768
+      }
+    ],
+    "price_level": 1,
+    "rating": 4.2,
+    "reference": "CoQBcQAAANODsb2QUTQ8CFXkeIOlqXTfnwSK6ePqSXxgLPeZLJUypZy00KMIiFSHNBIxKG9p7kJbBkzEVdjk-4u5tdkAhszcyd999XL3VnCLcmV2zDUHOIuAbw8BGJexeLIiRIXFNtLq5U5CZmVPISNnEFVry-v0UQw4TE2Na0Athaw1bcOaEhCwSjuGUHchOtacYr6rQq7pGhT1XTRlJIfplwyCMc-IAMq3Q8ynlw",
+    "types": [
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "2885 Diamond Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.739089,
+        "lng": -122.417684
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "78371620fdb28bf29955f0b6e53b8315a85b0c7d",
+    "name": "Progressive Grounds",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 960,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CnRoAAAAU0j2-XGv5GY1LvAVRZ3C_I2FNRruNgMGraU87ik-lTNTMMKjpt0vToyxTIswnBxmYc280A7MN3OetE_qIzswYhHg8H2v5ktIaLyGYYOapJDOMe0YjOH3rzEA_Z_caqYj0FwemQ_g1vfCwo7kRjCyoRIQXz4v84aZqxQFfkVWbOkZ8xoUnjimoIOoFx7LcRNhDMPjyU3qDs4",
+        "width": 1280
+      }
+    ],
+    "price_level": 1,
+    "rating": 4,
+    "reference": "CoQBcgAAALZcvKVugGfF-EF45F9RzZVnWyYik8LMlAwltAKdO9r_9n2b4UA7f13GLYQQhis--0oaM7GA7lr8YLfRYTYbZtcTCd5AuDu5QmYqmKhI5lZKP_UpvK6ZnsdGGGJbtc5_KGST5f8heocn69HXC3vy0eihw94z7itHsFiFkSL0vqdGEhBPhOOK4IKJai_ZxaqivxiCGhSZbU5Rdh8oSp5aAkP74Prlsr_tFQ",
+    "types": [
+      "store",
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "400 Cortland Avenue, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.743739,
+        "lng": -122.438769
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "bf1020aa475e0ba5a922e5fd9a668b7a15925d66",
+    "name": "Starbucks",
+    "opening_hours": {
+      "open_now": false
+    },
+    "price_level": 1,
+    "reference": "CnRnAAAAzAFqQsceTrs03ZfdfEikYUbBiKfkyS5r29Is-vUS50SFhXCQrPVoz3KobmtUgkCJOfISfyCD5Ukc_7SsMKGJW2kFXiE58BebssAGeKBGoL015fJLIALCUTu_R29Sduhvc7NABM5C5JJrQJVMd-762RIQzRifz5GioiqYyaNJafHnLRoUaoGdEaK2tzpcOt8PGzls1-k5hiM",
+    "types": [
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "5290 Diamond Heights Boulevard, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.748636,
+        "lng": -122.426992
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "f0df359c8c2e85a5bcf90321af0a74e5543ca02a",
+    "name": "Chloe's Cafe",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1536,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CoQBdQAAALE6BnQ-dvT7ZC4WaF9TsTI33bHNlMtkyAuTwZ5jwKrp1aAvzVBjU9A8EVrA1PztMWqDLLbCNSV0d5ZFOY5XyVcnhphssxyQyxJHpEF1yGV0obksJ2qQbXJ7ddac3XWc-Xb5MjRhGDQ19MjEXd_yJdPtWCu51KdrX-UonFLaQkCtEhB86FXD2gjMWTHqxYmjpKD-GhRR35HciSE3EJxZ0FO4w2g4BoFEhg",
+        "width": 2048
+      }
+    ],
+    "price_level": 2,
+    "rating": 3.8,
+    "reference": "CnRqAAAAi_Xs-SXAlxYYB9azxgt4ktVlwFteO1OBSpnhWvfR3F_ZxUUuIYZnMa1gGxX3eylnTig4vmola2dJ0v7C-Yt_N8uI2EoHNYRBNLVKL-luusfg7LCrFurP0hBf9pHWtnOZE_e4bWuCSQkDQmYIP2z24hIQLeHxzC-umFxpoYHyKRLV0xoULtKQB76TBo1w5ZMJ2hp7clg7smI",
+    "types": [
+      "cafe",
+      "restaurant",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "1399 Church Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.746021,
+        "lng": -122.426768
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "07dde34f5c1acb82e91bee9ba7a1209666034d25",
+    "name": "Martha & Bros. Coffee Roastery",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 300,
+        "html_attributions": [],
+        "photo_reference": "CnRqAAAABZLPbFwdlByJmex0pJlj36MYPehlWJGQ85oEJ4krFAc2fJdmYqSebf__LdBulhL0wX7s_MhXscTKFHnR11acFp0Mx4jjOu6WEh6zLJ-hVUGmIWwkrdVOKcDZWM6daePhu3OHsjRSOK1tTfRNiaPNxBIQY7tR9zvPE9k4xD0j1OM_phoUQuz15Z-G6KvqXMmY7sitwcDn5VU",
+        "width": 400
+      }
+    ],
+    "price_level": 1,
+    "rating": 4.1,
+    "reference": "CoQBfQAAAL4o_R6dM5yyYryea0s-N5fT8SruJoNr-0bDTOD6mz_8fyMD-xL176Ug6X1fPowfKRzlzT7Z5lOWXdKeP4g5YWWI_I4T8DSFfnWCeJaEhUlvwQW_tJpAKwxDvN2ZYeLsFV7Jfoq_tQaL1gM0dtAAWyp5OsuTaocJdqcFgbG4RwZ1EhAOwjNc8Mj-0t3ta8vufKxzGhRCo45c4m8nGGw9VB4hatBoTk_2Tg",
+    "types": [
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "1551 Church Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.748514,
+        "lng": -122.42504
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "cd31fa34d8a911519b4a858d20e9a94184d3b183",
+    "name": "Luv a Java",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 853,
+        "html_attributions": [],
+        "photo_reference": "CnRsAAAATTRrMmWQ_TTWmIbYnV5DaJql2fCjGW4F5-K6wQZGPJgOn-sswcGFRgKie4tpWzJOeYNEqGpvfeinDfM7g1FWK2cqqj-6GG_NAm_dMNFLhnxXuWn_AZS3nAsXziEOZBClKrZ0aBQbmdsOOMfkHbBRxhIQ9OUXVjITMHwVi1v1_2bUgBoUmBPkMXsFeyZQdVDSPqGBRjpEIpA",
+        "width": 1280
+      }
+    ],
+    "price_level": 1,
+    "rating": 4.3,
+    "reference": "CnRpAAAAx9sH4HxStASJWpr17tFMHdWf66UHMdgcI2x-_K5RIbanGQLjFjSFtJDWvkj5E9yYj9f2qctnfHRAX1t4rTBAtxCPcnsK_uzZFhTtTWEtyjjB-jJs6GGSC2L0db5FXZp4OD_383cQKLn25GT96eZL7RIQW2Ef27GrIcVjppELBdM2zBoU4ojL0SXxmj2mGgPf5VamHVj6_Ps",
+    "types": [
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "1300 Dolores Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.74426,
+        "lng": -122.420902
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "c5a35cd3ce8c5afd306fe058ea1a815dd07b4d3e",
+    "name": "Al's Super Cafe",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 478,
+        "html_attributions": [],
+        "photo_reference": "CnRwAAAAtLMWfuSb4ERTS3qt_HBgmltMqyo_kRmHYzCW3b-Ub3E2_IovEjo0GYRjyh_kFf9aHdNXc809dwDYE7oKP5v4sm2RFR2nXBTVoKwvLmcok9zuSHkNEP9D6ESxbkkGNkpkyBPcVoy08KLJh8BrsjFu-hIQsavEFijgN7wgQIJDYRO_qxoUAz4FMPPF-jbm28eZUNgA_83q1TY",
+        "width": 640
+      }
+    ],
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "CnRuAAAAFCP7TeCR2yRzIS_xHUw8L1_iBFHqNWCzFplkRuEWlt99wJTDTfOdGgBR9uEqSE__2trSEcisdKwKwd0Qz5fCL4VsiKgzSdBR4QUvhagUA8lXv6-fCc9yrfRfpz0EBfdFya7qkwB-AS6wLIq8nHNzWRIQMjadUjEblRhDWRhNp0Kn0hoUW8EB2w0khKllKoplLcpBPq-zNgo",
+    "types": [
+      "cafe",
+      "restaurant",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "3286 Mission Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.742217,
+        "lng": -122.426433
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "aae107ecb34169caa812afb6309998652abd9179",
+    "name": "Cafe XO",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1936,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CnRkAAAAwlHK-CiF7ba0FvEka82eCC6K9U1-sitQVUngEL2IS-ROmKfYy21DcyrcNx0r8D-SKxyWa2N-oJKeDAdHHVJtvCWJCIctfpj5ThLereGr2S7j4x5N44DrvP_9qp-38j7_IdHOjYZ4zNtYx8nWL97H-BIQ-CIw7tTFE4os0WhdhZEo1BoUPSMRDNuoYVE7nYP6wxRawOoCmsA",
+        "width": 2592
+      }
+    ],
+    "price_level": 1,
+    "rating": 4.2,
+    "reference": "CnRlAAAAsoUOWmPqrJ3bnBHlj6krOcFI6KxucCMS03lxCNu1GinX-NOQpzxmb58Srpn7ribvaGZpw7Yp43ddn6h4DpUj0mkJtvm_q8Sj4-zyhLgYzgoK8Ac10DZXI1qBbY6gavrnFy60qQrU8QUBoU54Bk_7ehIQD7xUP6jgMU-vC_7U2TPcBBoUjWgW40aTxB-xKtbVBnivlOnzFqc",
+    "types": [
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "1799 Church Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.734578,
+        "lng": -122.43391
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "4c73c240e1afb93d45577d30374c8e7d8c506c96",
+    "name": "Tyger's Coffee Shop",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1296,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CnRoAAAAWsGYndtwRsWaCD_X04UNVokBMatCPvXFybQvDQsg7ZwcoMrqaqWzJn53EovMtPIBixmFc8tNrizycBy8QxarVLpX5ClMMvu3rSC9yevFmwVPmcvcJLqc-PcVky92p4OYESJYkkFmyftCquonnyIefxIQOQuku4_rWXkoqd3jN1lK0xoU1eFRGDFQDQ6ANmGG7z8NXp0a_ao",
+        "width": 972
+      }
+    ],
+    "price_level": 1,
+    "rating": 3.6,
+    "reference": "CoQBcgAAAObr2xfRZWJVg73pTtxkRqb9BLvOzWhiY3BBmi3wDS_W7YsELVjD1s612NvVYOg1Qp1Zk5sfP3v9v2MyNbLmm2EaoWWE51Dn_TfoPtkmtBrCBtuC1wvGOCdf_qiHhhFsamVm_kLqbruAKPf-7hRexvtqwNO0t2t1rdkxvrZX4ypJEhA6q9wwTfwb5k3TyEswZWXjGhRrCXO6sqUiCoQXMDfuPgb9MBCcGQ",
+    "types": [
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "2798 Diamond Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.734426,
+        "lng": -122.433721
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "8ef7432d0ec91a2a281b1654292bb42ad91f6de2",
+    "name": "Higher Grounds Coffee House",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 612,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CoQBfwAAAPKyVRZwqDXhy1SCyDysmpd73u7f_1Le2I--hhM8AX1r7AGdbRgMl5vj5a2PUglyGt1HRi9FNZhsP5HJ89x-_sydKwLS6SFwyMm_R1we0zdQXDH8Cw3OQTPw4wEB_D_wHCTZB1xY-M-XlJzzyGDETczceh3SYEtswQ2Qt50bMwe6EhAB-xjFBlonzIQBhhbB2L0yGhRH26eGcd2q9MVVkufidx7U-wZ8PQ",
+        "width": 816
+      }
+    ],
+    "price_level": 1,
+    "rating": 4.5,
+    "reference": "CoQBegAAACb8O-G5fJpHUznQM2kXijHcezgbUM9xj_rysyvW8rjoWAl20WV-cEsdPmW0b6UgDbP2KT6cYd0uSYPzrd2MvlzsWnCYJXLXrgj4irEaChr6HKVgbdkPA0dj17bnt1X_NCHO979IanymPsTB1Axz3kGRWgfcOuN-yVPoqm0ENk7-EhCy2hE-A3gY_3D6-r_DnlBJGhQLXAyoC3UOBs0aa8mNqcGA1OXleQ",
+    "types": [
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "691 Chenery Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.744089,
+        "lng": -122.421743
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "3a73ff2489d80420a8933f52ee45c15de05abff0",
+    "name": "Cafe Seventy8",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 648,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CnRtAAAAj2gzLNwTrKBuuaxjTayTcMupfZQ8J5HkjFQZcqV2iilDuCf-pPktoYa6sKcGqmHqDx5yrAq8hvZonHISFKcmRdlUTVYP_rQ1FZ8ImKmV4jXtdP63WWBP2uMk7A7ntUy3aLxDQ0PjpbSYqbhmezPA8RIQyB-Q9wMnoi0IOIVBDtXhsBoUimBBJyqRT0MpTOWs5nH59LUfEUU",
+        "width": 486
+      }
+    ],
+    "rating": 4.3,
+    "reference": "CnRsAAAA9XyZeVNdT1hconiVgTjiXJWLmOvl8mgHMSOfnAZEafskMVYs09mfog0ziWEDUwDPBhtDOqCvA2zehNjFPv4oX9lPj6OpgT1IrVnz-Ls055-CjO7eW-oQC-pgeWiAk9CHTjUEROLnHgVqEf5ej-NJ8BIQh7CdsVX0d1csHVxHknR8URoU934XLtDthwfUnC397Y0cf3mjS3I",
+    "types": [
+      "store",
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "78 29th Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.733831,
+        "lng": -122.434169
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "127a6b0ae0bf0d81aec72c00d5bca5866ff9d916",
+    "name": "Pebbles Cafe",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 853,
+        "html_attributions": [],
+        "photo_reference": "CnRsAAAAZHwMRGlaw_co1MomvEa44IEtwMY0rZNXxypk4s7ZGfNDXdvaXYQBzCQCRXK_-TJpfKQGSq7zEu3aJV8EDXbapQelerOR3YwNarmwpw4aVWTMJQgAHFPmrbiBtKiqEKekAwh4ZvNI1feY-wWCGQx66BIQKiJGXuFKliF60aaQqVUBKhoUMF8F8QhR9RiFj3YbR7121Jgex_4",
+        "width": 1280
+      }
+    ],
+    "price_level": 1,
+    "reference": "CnRqAAAAyIZbrJwME19ialU08jYpj3z_ze_c7kptVdF8PSCrydkcUZBUwhVluJXJwh5GNMsUpYqaiku4imy6-DJRI0CDJ1137IuuyeiP428ewGFxgjEyxEgL-Xzfe3zk_OSntGYsok9JcmNAQq6H97XXijSSmxIQ0V4-5MBnGdrbXwqRaozI0BoUyrG-gS7neoCIHuRRRw3hbzF1fvE",
+    "types": [
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "2852 Diamond Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.748498,
+        "lng": -122.429163
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "a7da144bd7764f0e5621d700ef54544ae3c48770",
+    "name": "Spin City Launderette",
+    "photos": [
+      {
+        "height": 1224,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CnRoAAAAR4wIPzOLXW-Q0O4gM9yJYEniWNh_OHM_GJLHrZuvAjOUiCkJJBYPgSYoYVTe3TWp-q7187PSzAM234EMuNjz53iaiObc0qx3IchUUiSuOqPqwa2yMSE-yvAnAhBHvywEVzxk3dwCpB7Rrt5lH9aE8RIQ-iEhUcEGplddiyaHzQmyyRoUHIFMp0gneW_MlcKGBs_6rfdFQ_I",
+        "width": 1632
+      }
+    ],
+    "rating": 4.4,
+    "reference": "CoQBcwAAAJOzYNJY44nqIyoBe4QhfpVhi5wN5JdybPILhNOwxifXP4X07eICQ76YjkgGdskKjYug5xUSqjUkSDxXiBFibUoiQ0haU_17PP7WlopwQOC41FIW-Gz9cPr08Vlgk4mHTGVK8vKzX4Dop6UG48vQ-YD4Er3eASVPGANvM3xhOXGHEhDMgm9t3RhZtxi4RNcDfjwqGhQVAbhZmEdxpwmp7_6pG0qi84Crmw",
+    "types": [
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "1299 Sanchez Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.745477,
+        "lng": -122.422418
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "e1fa0c06b0a2647ee356b658a479f3f0681bab16",
+    "name": "New Alternatives Cafe",
+    "opening_hours": {
+      "open_now": false
+    },
+    "reference": "CoQBdAAAACnoeuhaMR1pRZjkCTUcnZNoG_e78gWuS8D17YuR4LWQ0tslxsUfXpWZte0Mh89j-BfAOpk36MntXVe69miHwh28Z_x_0SIckHJB7oTvu2P7eMlAEOddMs2wKhoJqCKxP9OjOYt1m6A2TAcZb0e7Xu2P0-UO0Bl4Xp0zapbehN9NEhC-D8olX_JJpOQiCwUcT0f3GhRRHusUWSzXXleCy4rYVC8Mygkunw",
+    "types": [
+      "meal_takeaway",
+      "cafe",
+      "restaurant",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "1600 Guerrero Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.747933,
+        "lng": -122.418574
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "2cb9d4f3fb61d46a9df5f5fd0f35107aea054ec0",
+    "name": "Sweet Chinito Coffee",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 2048,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CoQBcgAAAMipi18cSb5St0tj6XVXSZAmGEuc-QKcE9I5cP5Bla_cGm8HFNnVDWfGVhymkuwAiprfRdhgZp94_0qLIclFSfnKGvSmG8viVJKgm11vX7RPZDmPI4ZBNniadZvv0ZofW03igSPnoTD9ek5vxxq8FYbiPWAK5pzXJCjuUe7jfBSbEhBz8_BuS9VxH8phisIOjkFHGhTqJJ4X68AOGLbOYWVln9WWLXStQw",
+        "width": 1536
+      }
+    ],
+    "rating": 4,
+    "reference": "CoQBcwAAAAX7YLpezCpXmrDqmmXNr3lM9ygn-UXYHfTByecXD6z2ezgvd-MLZYneQ_y0XpvWbJkko-728Cr0sYRGyiaikQLLYbH1g6ASEt9iq-oEtCcnaUiCAUMDTeRd7fOdzYiOiovyfK_chFDq-PyCCLmtRQIlKunm1zRLh-R-G52S6UkiEhAjxHMm7thKaC1w-jZyQPWOGhS6NUmNHbiMrZu2T8tWuhLL2DmN4g",
+    "types": [
+      "store",
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "3100 Mission Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.732503,
+        "lng": -122.434725
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "de7ee607c77f2a398c8adff92c773d10c1ec077a",
+    "name": "Cup",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1632,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CnRoAAAAw1UQtt9igSN3A-4xEpc4O37JqAMohXqGlD1z_VjKGf3j5IZMnx1yribHo63gjR70ufUn4b7GBEkwai5WTK554f-N77jw34FqyV0uyrClP9UCvUYr2W50o6A-Zqo0JoLGKAIONZpdgR2pS72D2za8EhIQF-F6TwSKmaKgMGcImby2XxoUz2ONrRaLo-9ILD5Qvm6pymx8RRA",
+        "width": 1224
+      }
+    ],
+    "rating": 3.6,
+    "reference": "CnRhAAAAftl68Hd4P1YLGQyk8R-lXOySCIesTOYvpdsaMiOrR-WzZeMMtdNwXed8xaAUx9DPJH1r-0WyCcOQwbMUEOvhx66vttd7kBQZRAjXbNSAMDDtW1_jpaKNAzxAwqWV_OkdkpEC3YztmGY4qbCGRD2seRIQPwPrRs7ivp2zAr9WhBe72BoUy7zACK6NEP6UVDTZdMh16gCh__U",
+    "types": [
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "6 Monterey Boulevard, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.741668,
+        "lng": -122.422575
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "315bd195dffffb97bc7339720e7fcfd7a5464239",
+    "name": "Cafe St. Jorge",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1539,
+        "html_attributions": [
+          "From a Google User"
+        ],
+        "photo_reference": "CnRnAAAAScdGon1aN--UxlZijrEGT45p8n1os-BHBEqfnHNwtdNtJmik0rrGiDYTeMQ8X66Nq2tdUXnrsheVygmWXPdjjYusQ1oD1e_Wicus_DnOXWwb1jmlwBQ9GbQnK3VtWoF2Vgtdo03n36Jfqc0wccXkuhIQGjwtzw9OlfuUZQfVI7XlNBoUbJH62aZuX5KwuNPbF-i2uFdx8co",
+        "width": 2048
+      }
+    ],
+    "reference": "CnRsAAAADFLvDl8vfWYkIXr8YZddRtu8Y2O2RNn5ifi0nxP7_arC8yjDnd5USXuSI8zQoVME6p31g2aIYBunQ2kvAWS5K0Vt73P6OjpxP6mh5WunV5pK17L7i9KEcGk8RLYHA6b6TtDBBJrOUouWreb_xhWtQRIQloIUUUGfXYKqoPrUilGSQhoUxxnKDdiRy6NfJtuDrn9AWOAyURw",
+    "types": [
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "3438 Mission Street, San Francisco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 37.736102,
+        "lng": -122.424101
+      }
+    },
+    "icon": "http://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+    "id": "176d684c73dfd767b88eaab65c8381a57f6472af",
+    "name": "Cafeto Coffee Shop",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 346,
+        "html_attributions": [],
+        "photo_reference": "CoQBdwAAAOVfbu_rR1f0cZqtdFslhinDrHEaWEcIhmkpSjsPP0MecPSQKedth9uE-3sN2LiFFhOt0krDann8Q9VQ6Uo-16NqbVwnjbNZAhuY_pZP8HA4YYLZPOX8OdYx2n7otLzppnV_leGhmJhFbF17EIg6M4two_VVPdk9mI3LEXe05fcXEhDw_tcHvNbyDIxW9dLZZEXmGhSnTSqWgeGSABXmcebRjPcJpmB0EQ",
+        "width": 293
+      }
+    ],
+    "reference": "CnRwAAAAHn4I71tHwgiUb1Le1jZBWmbEP2MRNWhSqqJE756-3Pk2_skxrwQUVndT8AbQAnUimPIcn_ju7lo86cOmi0qun6bc-kfquZn_5RmMXg5J130LAXcJABtd37BCqHhcvYCF1Qh6N_IyWio2EvcfCa02zBIQ5yQH4ny2oO9cvKLk_Nc0dhoUYl58c7w_JWzu-dlRN1nyVdXNyQk",
+    "types": [
+      "cafe",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "111 Richland Avenue, San Fransisco"
+  }
+]
