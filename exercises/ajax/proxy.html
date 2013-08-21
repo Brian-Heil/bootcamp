@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<title>Test</title>
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$.ajax({
+			type: 'get',
+			url: 'http://proxy-rocketu.rhcloud.com/rocketu-api/', // DO NOT CHANGE
+			data: {
+				url: 'http://api.brewerydb.com/v2/beers', // Actual URL for API call
+				key: '791b91a53a0f314ee751587b4a9ac4b1', // Any additional parameters for API call
+				name: 'pilsner'
+			},
+			dataType: 'json',
+			success: function(json) {
+				console.log(json);
+			},
+			error: function(err) {
+				console.log(err);
+			}
+		});
+	});
+	</script>
+</head>
+<body>
+</body>
+</html>
